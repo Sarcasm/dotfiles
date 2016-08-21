@@ -6,6 +6,10 @@ This article explains the idea:
 
 * http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
 
+An alternative method could be to use the `homegit` aliases from this article:
+
+* http://chneukirchen.org/blog/archive/2013/01/a-grab-bag-of-git-tricks.html
+
 # Setup
 
 To configure stow to push file to the user home directory:
@@ -16,7 +20,9 @@ cat <<EOF > .stowrc
 EOF
 ```
 
-Then you can enable configuration files using `stow package`.
+Then you can enable configuration files using `stow <package>`.
+
+Enable all with `stow *`.
 
 Some packages require configuration before stowing,
 these are listed below.
