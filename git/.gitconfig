@@ -1,0 +1,6 @@
+[color]
+	ui = auto
+[merge]
+	conflictstyle = diff3
+[include]
+	path = ~/.gitconfig.local
