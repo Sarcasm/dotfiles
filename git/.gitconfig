@@ -1,6 +1,21 @@
+[alias]
+	patdiff = difftool -y -x patdiff
+	pdiff = -c diff.external=$HOME/bin/git-external_patdiff.sh diff
+	pshow = -c diff.external=$HOME/bin/git-external_patdiff.sh show --ext-diff
+[branch]
+	autosetuprebase = always
 [color]
 	ui = auto
-[merge]
-	conflictstyle = diff3
+[core]
+	excludesfile = ~/.gitignore
+[diff "bz2"]
+	binary = true
+	textconv = bzcat
+[difftool]
+	prompt = false
 [include]
 	path = ~/.gitconfig.local
+[merge]
+	conflictstyle = diff3
+[rebase]
+	autosquash = true

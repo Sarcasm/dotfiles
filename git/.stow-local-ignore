@@ -1,0 +1,4 @@
+# -*-conf-*-
+# this file has no other purpose than to disable the default ignore list
+# the file git/.gitignore is filtered otherwise, because it is listed in the
+# default ignore list
